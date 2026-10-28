@@ -1,7 +1,5 @@
-"""imu_check.py - Step 3 verification. Motors disabled, do NOT run main. In PuTTY:
-    exec(open('imu_check.py').read())
-Turn Romi by hand (level). Heading and yaw rate must be near-steady when still, and a LEFT turn must give
-INCREASING heading and POSITIVE yaw rate. Press q to stop."""
+"""imu_check.py: okay so this is the Step 3 verification. Motors disabled, do NOT run main.
+   """
 import sys
 from pyb import USB_VCP
 from time import sleep_ms
