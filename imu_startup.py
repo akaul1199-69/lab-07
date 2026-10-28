@@ -1,7 +1,7 @@
-"""imu_startup.py - IMU wiring constants and startup calibration (Lab 0x07). Call get_imu() BEFORE the
+"""imu_startup.py: this has the IMU wiring constants and startup calibration (for Lab 0x07). Call get_imu() BEFORE the
 scheduler starts, with the motors disabled. It blocks while it waits for you (allowed at startup only).
 
-WIRING (BNO055 harness -> Nucleo). I2C is bit-banged (SoftI2C) because every hardware I2C bus on this
+WIRING: so I2C is bit banged (SoftI2C) because every hardware I2C bus on this
 Nucleo shares pins with our motors or line sensors:
    red    VIN  -> 3V3   CN7 inner column, row 8 (pin 16)
    black  GND  -> GND   CN7 inner column, row 10 (pin 20)
