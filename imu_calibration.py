@@ -1,7 +1,4 @@
-"""imu_calibration.py - save/load the BNO055 22-byte calibration profile as JSON (separate from the QTR file).
-
-{"mode": "IMUPLUS", "units": "deg, deg/s (16 LSB per unit)", "mounting": "...", "profile": [22 ints 0..255]}
-All 22 bytes are saved even though IMUPLUS ignores the magnetometer entries.
+"""imu_calibration.py: so this file saves/loads the BNO055 22-byte calibration profile as JSON (separate from the QTR file).
 """
 import json
 
