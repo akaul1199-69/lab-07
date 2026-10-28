@@ -1,4 +1,5 @@
-"""imu_check.py: okay so this is the Step 3 verification. Motors disabled, do NOT run main.
+"""imu_check.py: Okay, so this is the Step 3 verification. Motors disabled, do NOT run main. In PuTTY:
+    exec(open('imu_check.py').read())
    """
 import sys
 from pyb import USB_VCP
