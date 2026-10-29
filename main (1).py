@@ -5,8 +5,8 @@ from pyb import Pin, Timer, USB_VCP, I2C
 from task_share import Share, Queue
 from motor_AK import Motor
 from encoder import Encoder
-from taskmotor_0x05 import TaskMotor
-from taskuser_0x05 import TaskUser, S6_EXIT
+from taskmotor_0x07 import TaskMotor
+from taskuser_0x07 import TaskUser, S6_EXIT
 from task_line import TaskLine
 from ClosedLoop import ClosedLoop
 from line_sensor import N_SAMPLES, TIMER_FREQ
