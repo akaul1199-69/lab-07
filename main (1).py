@@ -87,7 +87,7 @@ MOTOR_PRIORITY = 2    # Highest priority runs first
 LINE_PRIORITY = 1    # Between motors and user
 USER_PRIORITY = 0    # Lowest priority
 TRIAL_DURATION_MS = 4000    # Step test length
-LINE_DURATION_MS = 5000    # Line following dataset length
+LINE_DURATION_MS = 15000    # Line following dataset length
 N = TRIAL_DURATION_MS // SAMPLE_INTERVAL_MS + 5    # Step test queue size
 N_LINE = LINE_DURATION_MS // LINE_INTERVAL_MS + 5    # Line queue size
 
