@@ -12,6 +12,7 @@ from ClosedLoop import ClosedLoop
 from line_sensor import N_SAMPLES, TIMER_FREQ
 from line_startup import get_line_sensor
 from imu_startup import get_imu
+from machine import SoftI2C, Pin as MPin
 
 Pin(Pin.cpu.C8, Pin.OUT_PP).low()    # Left nSLP
 Pin(Pin.cpu.B9, Pin.OUT_PP).low()    # Right nSLP
