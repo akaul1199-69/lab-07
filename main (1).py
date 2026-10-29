@@ -20,8 +20,8 @@ Pin(Pin.cpu.B9, Pin.OUT_PP).low()    # Right nSLP
 line_sensor = get_line_sensor()    # Calibrate before the scheduler starts
 
 # ADD WIRE PLACEMENT
-Pin(Pin.cpu.<pin>, Pin.OUT_PP).high()    # Green Wire 
-i2c = I2C(N, I2C.CONTROLLER, baudrate=400_000)    # N = free SCL/SDA pin
+MPin("C10", MPin.OUT, value=1)     # IMU reset (green wire) held high
+i2c = SoftI2C(scl=MPin("B13"), sda=MPin("B14"), freq=400_000, timeout=20000)
 imu = get_imu(i2c)
 
 class Profiled:
